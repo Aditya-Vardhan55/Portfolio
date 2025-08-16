@@ -69,8 +69,8 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="bg-gray-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl p-8">
-              <h3 className="text-2xl font-bold mb-6 text-white">Get in Touch</h3>
+            <div className="themed-card border rounded-xl p-8">
+              <h3 className="text-2xl font-bold mb-6 themed-text-primary">Get in Touch</h3>
               
               <div className="space-y-6">
                 <div className="flex items-center">
@@ -81,7 +81,7 @@ const Contact = () => {
                     <p className="text-gray-400 text-sm">Email</p>
                     <a 
                       href="mailto:vardhanaditya04.contact@gmail.com"
-                      className="text-white hover:text-blue-400 transition-colors duration-300"
+                      className="themed-text-primary hover:themed-text-accent transition-colors duration-300"
                     >
                       vardhanaditya04.contact@gmail.com
                     </a>
@@ -98,7 +98,7 @@ const Contact = () => {
                       href="https://www.linkedin.com/in/aditya-vardhan-035303256/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white hover:text-purple-400 transition-colors duration-300"
+                      className="themed-text-primary hover:themed-text-accent transition-colors duration-300"
                     >
                       Connect with me
                     </a>
@@ -115,7 +115,7 @@ const Contact = () => {
                       href="https://github.com/Aditya-Vardhan55"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white hover:text-green-400 transition-colors duration-300"
+                      className="themed-text-primary hover:themed-text-accent transition-colors duration-300"
                     >
                       View my repositories
                     </a>
@@ -128,7 +128,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Location</p>
-                    <p className="text-white">Available for remote work globally</p>
+                    <p className="themed-text-primary">Available for remote work globally</p>
                   </div>
                 </div>
 
@@ -138,15 +138,15 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Availability</p>
-                    <p className="text-white">Open for new projects</p>
+                    <p className="themed-text-primary">Open for new projects</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="bg-gradient-to-r from-blue-500/10 to-purple-600/10 border border-blue-500/20 rounded-xl p-6">
-              <h4 className="text-xl font-bold mb-3 text-white">Why Work With Me?</h4>
-              <ul className="space-y-2 text-gray-300">
+              <h4 className="text-xl font-bold mb-3 themed-text-primary">Why Work With Me?</h4>
+              <ul className="space-y-2 themed-text-secondary">
                 <li>✨ 5+ years of AI/ML expertise</li>
                 <li>🚀 Proven track record with startups</li>
                 <li>🌍 Global remote collaboration experience</li>
@@ -157,8 +157,8 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl p-8">
-            <h3 className="text-2xl font-bold mb-6 text-white">Send me a message</h3>
+          <div className="themed-card border rounded-xl p-8">
+            <h3 className="text-2xl font-bold mb-6 themed-text-primary">Send me a message</h3>
             
             {submitStatus === 'success' && (
               <div className="mb-6 p-4 bg-green-500/20 border border-green-500/30 rounded-lg">
@@ -178,7 +178,7 @@ const Contact = () => {
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium themed-text-secondary mb-2">
                   Your Name
                 </label>
                 <input
@@ -188,13 +188,13 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 text-white"
+                  className="w-full px-4 py-3 themed-overlay border border-gray-600/50 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 themed-text-primary"
                   placeholder="John Doe"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium themed-text-secondary mb-2">
                   Email Address
                 </label>
                 <input
@@ -204,13 +204,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 text-white"
+                  className="w-full px-4 py-3 themed-overlay border border-gray-600/50 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 themed-text-primary"
                   placeholder="john@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium themed-text-secondary mb-2">
                   Subject
                 </label>
                 <input
@@ -220,13 +220,13 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 text-white"
+                  className="w-full px-4 py-3 themed-overlay border border-gray-600/50 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 themed-text-primary"
                   placeholder="Project Collaboration"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium themed-text-secondary mb-2">
                   Message
                 </label>
                 <textarea
@@ -236,7 +236,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 text-white resize-none"
+                  className="w-full px-4 py-3 themed-overlay border border-gray-600/50 rounded-lg focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-400/20 transition-all duration-300 themed-text-primary resize-none"
                   placeholder="Tell me about your project idea..."
                 ></textarea>
               </div>
@@ -244,7 +244,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full themed-button px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 themed-text-primary"
               >
                 {isSubmitting ? (
                   <>

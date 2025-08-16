@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-gray-900/80 backdrop-blur-md border-b border-purple-500/20' : ''
+      isScrolled ? 'themed-overlay backdrop-blur-md border-b themed-text-secondary/20' : ''
     }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
@@ -37,7 +37,7 @@ const Header = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="hover:text-blue-400 transition-colors duration-300 relative group"
+                className="themed-text-primary hover:themed-text-accent transition-colors duration-300 relative group"
               >
                 {item}
                 <span className="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
@@ -56,12 +56,12 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-gray-900/95 backdrop-blur-md rounded-lg mt-2 py-4">
+          <div className="md:hidden themed-overlay backdrop-blur-md rounded-lg mt-2 py-4">
             {['Home', 'About', 'Projects', 'Services', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="block w-full text-left px-4 py-2 hover:bg-purple-500/20 transition-colors duration-300"
+                className="block w-full text-left px-4 py-2 themed-text-primary hover:themed-text-accent transition-colors duration-300"
               >
                 {item}
               </button>

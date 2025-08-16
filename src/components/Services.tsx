@@ -48,18 +48,18 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-gray-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl p-8 hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-105"
+              className="group themed-card border rounded-xl p-8 transition-all duration-300 hover:transform hover:scale-105"
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-gray-700/50 rounded-lg group-hover:bg-gray-700/70 transition-colors duration-300">
+                <div className="p-3 themed-overlay rounded-lg transition-colors duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-2xl font-bold ml-4 text-white group-hover:text-blue-400 transition-colors duration-300">
+                <h3 className="text-2xl font-bold ml-4 themed-text-primary group-hover:themed-text-accent transition-colors duration-300">
                   {service.title}
                 </h3>
               </div>
               
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <p className="themed-text-secondary mb-6 leading-relaxed">
                 {service.description}
               </p>
 
@@ -67,13 +67,13 @@ const Services = () => {
                 {service.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-center">
                     <Rocket className="text-blue-400 mr-3" size={16} />
-                    <span className="text-gray-300">{feature}</span>
+                    <span className="themed-text-secondary">{feature}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-6 pt-6 border-t border-gray-700/50">
-                <button className="w-full bg-gradient-to-r from-blue-500/20 to-purple-600/20 hover:from-blue-500/30 hover:to-purple-600/30 border border-blue-500/30 text-blue-300 py-3 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105">
+              <div className="mt-6 pt-6 border-t themed-text-secondary/20">
+                <button className="w-full themed-button themed-text-primary py-3 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105">
                   Learn More
                 </button>
               </div>

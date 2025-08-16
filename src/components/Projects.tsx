@@ -65,15 +65,15 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`group bg-gray-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl p-8 hover:border-purple-500/40 transition-all duration-300 hover:transform hover:scale-[1.02] ${
-                project.featured ? 'lg:col-span-2 border-blue-400/30 hover:border-blue-400/50' : ''
+              className={`group themed-card border rounded-xl p-8 transition-all duration-300 hover:transform hover:scale-[1.02] ${
+                project.featured ? 'lg:col-span-2' : ''
               }`}
             >
               <div className="flex flex-col lg:flex-row gap-6">
                 <div className="flex-1">
                   <div className="flex items-center mb-4">
                     {project.icon}
-                    <h3 className="text-2xl font-bold ml-3 text-white group-hover:text-blue-400 transition-colors duration-300">
+                    <h3 className="text-2xl font-bold ml-3 themed-text-primary group-hover:themed-text-accent transition-colors duration-300">
                       {project.title}
                     </h3>
                     {project.featured && (
@@ -83,7 +83,7 @@ const Projects = () => {
                     )}
                   </div>
                   
-                  <p className="text-gray-300 mb-6 leading-relaxed">
+                  <p className="themed-text-secondary mb-6 leading-relaxed">
                     {project.description}
                   </p>
 

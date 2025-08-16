@@ -38,7 +38,7 @@ const Hero = () => {
             AI/ML Engineer | GenAI Developer | Full-Stack Innovator
           </p>
           
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+          <p className="text-lg themed-text-secondary max-w-2xl mx-auto mb-8">
             I'm a tech explorer building intelligent systems, GenAI tools, and automation solutions 
             for global businesses. I help startups turn ideas into scalable products using AI, React, and modern APIs.
           </p>
@@ -47,7 +47,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
             onClick={() => scrollToSection('contact')}
-            className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+            className="group themed-button px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 themed-text-primary"
           >
             Hire Me
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
@@ -55,7 +55,7 @@ const Hero = () => {
           
           <button
             onClick={() => scrollToSection('projects')}
-            className="group border-2 border-blue-400 hover:bg-blue-400/10 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2"
+            className="group border-2 themed-text-accent hover:themed-overlay px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 themed-text-primary"
           >
             View Projects
             <Download size={20} className="group-hover:translate-y-1 transition-transform duration-300" />
