@@ -43,6 +43,20 @@ const Header = () => {
                 <span className="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
+            
+            {/* Resume Button */}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="themed-text-primary hover:themed-text-accent transition-colors duration-300 relative group flex items-center gap-2"
+            >
+              Resume
+              <svg className="w-4 h-4 opacity-70 group-hover:opacity-100 transition-opacity duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              <span className="absolute bottom-[-4px] left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -66,6 +80,19 @@ const Header = () => {
                 {item}
               </button>
             ))}
+            
+            {/* Mobile Resume Button */}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-left px-4 py-2 themed-text-primary hover:themed-text-accent transition-colors duration-300 flex items-center gap-2"
+            >
+              Resume
+              <svg className="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
         )}
       </nav>

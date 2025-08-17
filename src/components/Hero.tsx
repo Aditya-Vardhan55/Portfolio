@@ -53,12 +53,22 @@ const Hero = () => {
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
           </button>
           
-          <button
-            onClick={() => scrollToSection('projects')}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group border-2 themed-text-accent hover:themed-overlay px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 themed-text-primary"
           >
-            View Projects
+            View Resume
             <Download size={20} className="group-hover:translate-y-1 transition-transform duration-300" />
+          </a>
+          
+          <button
+            onClick={() => scrollToSection('projects')}
+            className="group bg-transparent border-2 border-gray-500/50 hover:border-gray-400/70 px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 flex items-center gap-2 themed-text-primary"
+          >
+            View Projects
+            <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform duration-300" />
           </button>
         </div>
       </div>
