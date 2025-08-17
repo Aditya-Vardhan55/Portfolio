@@ -91,7 +91,8 @@ aditya-portfolio/
 │   │   ├── Projects.tsx        # Projects showcase
 │   │   ├── Services.tsx        # Services offered
 │   │   ├── Contact.tsx         # Contact information
-│   │   └── StarField.tsx       # Animated background
+│   │   ├── StarField.tsx       # Animated background
+|   |   └── ThemeSwitcher.tsx   # Switching Themes
 │   ├── App.tsx                 # Main app component
 │   ├── main.tsx               # App entry point
 │   ├── index.css              # Global styles & animations
@@ -156,79 +157,3 @@ The portfolio is fully responsive and tested on:
 - **Lazy Loading**: Components load efficiently
 - **Responsive Images**: Optimized for different screen sizes
 - **Modern Build**: Vite provides fast development and optimized production builds
-
-## 🐛 Troubleshooting
-
-### Common Issues:
-
-1. **Port 5173 already in use**:
-   ```bash
-   # Kill the process using the port
-   npx kill-port 5173
-   # Or use a different port
-   npm run dev -- --port 3000
-   ```
-
-2. **Dependencies not installing**:
-   ```bash
-   # Clear npm cache and reinstall
-   npm cache clean --force
-   rm -rf node_modules package-lock.json
-   npm install
-   ```
-
-3. **TypeScript errors**:
-   ```bash
-   # Check TypeScript configuration
-   npx tsc --noEmit
-   ```
-
-4. **Tailwind styles not loading**:
-   - Ensure `src/index.css` is imported in `src/main.tsx`
-   - Check `tailwind.config.js` content paths
-
-## 🚀 Deployment
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-This creates a `dist/` folder with optimized production files.
-
-### Deploy to Netlify
-
-1. Build the project: `npm run build`
-2. Upload the `dist/` folder to Netlify
-3. Set build command: `npm run build`
-4. Set publish directory: `dist`
-
-### Deploy to Vercel
-
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run: `vercel`
-3. Follow the prompts
-
-## 📞 Support
-
-If you encounter any issues during setup:
-
-1. Check that Node.js version is 18 or higher: `node --version`
-2. Ensure all dependencies installed correctly: `npm list`
-3. Clear browser cache and hard refresh (Ctrl+Shift+R)
-4. Check browser console for any error messages
-
-## 🎯 Next Steps
-
-After successful local setup:
-
-1. ✅ Verify all animations work smoothly
-2. ✅ Test responsive design on different screen sizes
-3. ✅ Update personal information and projects
-4. ✅ Test all navigation links and buttons
-5. ✅ Optimize for your specific needs
-
----
-
-**Happy coding! 🚀** The universe of possibilities awaits your AI/ML innovations.
