@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github, Zap, Bot, Globe2, Database, Cpu } from 'lucide-react';
+import { ExternalLink, Github, Zap, Bot, Globe2, Database, Cpu, Music, Plane, Brain } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -13,26 +13,35 @@ const Projects = () => {
       featured: true
     },
     {
-      title: "GenAI Content Automation Platform",
-      description: "A comprehensive platform that automates content creation using generative AI. Supports blog posts, social media content, and marketing materials with brand-specific customization.",
-      tech: ["Next.js", "OpenAI API", "Prisma", "PostgreSQL", "Tailwind"],
-      icon: <Zap className="text-purple-400" size={24} />,
+      title: "Spotify Music Recommendation System",
+      description: "A machine learning-based recommendation system that analyzes user listening history and song attributes to suggest personalized playlists, improving music discovery.",
+      tech: ["Python", "Scikit-learn", "Pandas", "Spotify API"],
+      icon: <Music className="text-green-400" size={24} />,
+      demo: "#",
+      github: "https://github.com/Aditya-Vardhan55"
+    },
+    // {
+    //   title: "GenAI Content Automation Platform",
+    //   description: "A comprehensive platform that automates content creation using generative AI. Supports blog posts, social media content, and marketing materials with brand-specific customization.",
+    //   tech: ["Next.js", "OpenAI API", "Prisma", "PostgreSQL", "Tailwind"],
+    //   icon: <Zap className="text-purple-400" size={24} />,
+    //   demo: "#",
+    //   github: "https://github.com/Aditya-Vardhan55"
+    // },
+    // 
+    {
+      title: "Flight Fare Price Prediction",
+      description: "Predictive modeling project that estimates flight fares using machine learning based on airline, route, duration, and seasonal data. Provides insights into cost-saving strategies.",
+      tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Scikit-learn"],
+      icon: <Plane className="text-purple-400" size={24} />,
       demo: "#",
       github: "https://github.com/Aditya-Vardhan55"
     },
     {
-      title: "Smart Analytics Dashboard",
-      description: "Real-time analytics dashboard with AI-powered insights and predictive modeling. Features interactive visualizations, automated reporting, and intelligent anomaly detection.",
-      tech: ["React", "D3.js", "Python", "TensorFlow", "MongoDB"],
-      icon: <Database className="text-green-400" size={24} />,
-      demo: "#",
-      github: "https://github.com/Aditya-Vardhan55"
-    },
-    {
-      title: "AI-Powered E-commerce Recommender",
-      description: "Machine learning recommendation system that analyzes user behavior and preferences to provide personalized product suggestions, increasing conversion rates by 40%.",
-      tech: ["Python", "Scikit-learn", "Redis", "Docker", "AWS"],
-      icon: <Cpu className="text-orange-400" size={24} />,
+      title: "GPT from Scratch",
+      description: "An end-to-end implementation of a GPT-like transformer model built from scratch. Includes tokenization, attention mechanisms, training pipeline, and text generation.",
+      tech: ["Python", "PyTorch", "Transformers", "Deep Learning"],
+      icon: <Brain className="text-pink-400" size={24} />,
       demo: "#",
       github: "https://github.com/Aditya-Vardhan55"
     },
