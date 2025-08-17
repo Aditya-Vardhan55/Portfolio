@@ -8,46 +8,46 @@ const ThemeSwitcher = () => {
 
   const themes = [
     {
-      id: 'default' as ThemeMode,
-      name: 'Galaxy Explorer',
+      id: 'classic' as ThemeMode,
+      name: 'Classic Space',
       icon: <Sparkles size={16} />,
-      description: 'Original space theme',
+      description: 'Purple cosmic gradient',
       preview: 'bg-gradient-to-r from-blue-500 to-purple-600'
     },
     {
-      id: 'neon' as ThemeMode,
-      name: 'Neon Glow',
-      icon: <Zap size={16} />,
-      description: 'Electric neon vibes',
-      preview: 'bg-gradient-to-r from-cyan-400 to-pink-500'
-    },
-    {
-      id: 'glass' as ThemeMode,
-      name: 'Glass Morphism',
+      id: 'darkGalaxy' as ThemeMode,
+      name: 'Dark Galaxy',
       icon: <Eye size={16} />,
-      description: 'Frosted glass effect',
-      preview: 'bg-gradient-to-r from-white/20 to-blue-200/30'
+      description: 'Deep space darkness',
+      preview: 'bg-gradient-to-r from-black to-blue-900'
     },
     {
-      id: 'minimal' as ThemeMode,
-      name: 'Dark Matte',
-      icon: <Minimize size={16} />,
-      description: 'Clean minimal design',
-      preview: 'bg-gradient-to-r from-gray-700 to-gray-900'
+      id: 'nebula' as ThemeMode,
+      name: 'Nebula Mode',
+      icon: <Sparkles size={16} />,
+      description: 'Vibrant cosmic swirls',
+      preview: 'bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500'
     },
     {
-      id: 'pastel' as ThemeMode,
-      name: 'Soft Pastel',
+      id: 'aurora' as ThemeMode,
+      name: 'Aurora Mode',
+      icon: <Zap size={16} />,
+      description: 'Northern lights glow',
+      preview: 'bg-gradient-to-r from-green-400 to-blue-500'
+    },
+    {
+      id: 'sunsetCosmos' as ThemeMode,
+      name: 'Sunset Cosmos',
       icon: <Heart size={16} />,
-      description: 'Gentle pastel tones',
-      preview: 'bg-gradient-to-r from-pink-200 to-purple-200'
+      description: 'Cosmic sunset vibes',
+      preview: 'bg-gradient-to-r from-orange-500 via-red-500 to-purple-600'
     },
     {
-      id: 'cyberpunk' as ThemeMode,
-      name: 'Cyberpunk',
-      icon: <Palette size={16} />,
-      description: 'Futuristic cyber style',
-      preview: 'bg-gradient-to-r from-green-400 to-yellow-400'
+      id: 'dreamyPastel' as ThemeMode,
+      name: 'Dreamy Pastel',
+      icon: <Minimize size={16} />,
+      description: 'Soft blurry galaxy',
+      preview: 'bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300'
     }
   ];
 

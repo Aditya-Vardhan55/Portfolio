@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-export type ThemeMode = 'default' | 'neon' | 'glass' | 'minimal' | 'pastel' | 'cyberpunk';
+export type ThemeMode = 'classic' | 'darkGalaxy' | 'nebula' | 'aurora' | 'sunsetCosmos' | 'dreamyPastel';
 
 interface ThemeContextType {
     theme: ThemeMode;
@@ -18,12 +18,14 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [theme, setTheme] = useState<ThemeMode>('default');
+    const [theme, setTheme] = useState<ThemeMode>('classic');
 
     useEffect(() => {
         const savedTheme = localStorage.getItem('portfolio-theme') as ThemeMode;
         if (savedTheme) {
             setTheme(savedTheme);
+        } else {
+            setTheme('classic');
         }
     }, []);
 

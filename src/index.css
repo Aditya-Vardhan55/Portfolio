@@ -273,7 +273,7 @@ body {
 }
 
 /* Default Theme (Galaxy Explorer) */
-[data-theme="default"] {
+[data-theme="classic"] {
   --card-bg: rgba(31, 41, 55, 0.5);
   --card-border: rgba(139, 92, 246, 0.2);
   --card-hover-border: rgba(139, 92, 246, 0.4);
@@ -283,71 +283,101 @@ body {
   --button-bg: linear-gradient(to right, rgb(59, 130, 246), rgb(147, 51, 234));
   --button-hover: linear-gradient(to right, rgb(37, 99, 235), rgb(126, 34, 206));
   --overlay-bg: rgba(17, 24, 39, 0.8);
+  --galaxy-bg: linear-gradient(135deg, #1f2937 0%, #7c3aed 50%, #8b5cf6 100%);
 }
 
-/* Neon Glow Theme */
-[data-theme="neon"] {
-  --card-bg: rgba(0, 0, 0, 0.7);
-  --card-border: rgba(6, 182, 212, 0.5);
-  --card-hover-border: rgba(6, 182, 212, 0.8);
+/* Dark Galaxy Theme */
+[data-theme="darkGalaxy"] {
+  --card-bg: rgba(0, 0, 0, 0.6);
+  --card-border: rgba(59, 130, 246, 0.3);
+  --card-hover-border: rgba(59, 130, 246, 0.5);
   --text-primary: rgb(255, 255, 255);
-  --text-secondary: rgb(34, 211, 238);
-  --text-accent: rgb(236, 72, 153);
-  --button-bg: linear-gradient(to right, rgb(6, 182, 212), rgb(236, 72, 153));
-  --button-hover: linear-gradient(to right, rgb(8, 145, 178), rgb(219, 39, 119));
+  --text-secondary: rgb(147, 197, 253);
+  --text-accent: rgb(96, 165, 250);
+  --button-bg: linear-gradient(to right, rgb(30, 64, 175), rgb(59, 130, 246));
+  --button-hover: linear-gradient(to right, rgb(29, 78, 216), rgb(37, 99, 235));
   --overlay-bg: rgba(0, 0, 0, 0.9);
+  --galaxy-bg: linear-gradient(135deg, #000000 0%, #0f172a 30%, #1e3a8a 70%, #1e40af 100%);
 }
 
-/* Glass Morphism Theme */
-[data-theme="glass"] {
-  --card-bg: rgba(255, 255, 255, 0.1);
-  --card-border: rgba(255, 255, 255, 0.2);
-  --card-hover-border: rgba(255, 255, 255, 0.3);
-  --text-primary: rgb(255, 255, 255);
-  --text-secondary: rgba(255, 255, 255, 0.8);
-  --text-accent: rgb(147, 197, 253);
-  --button-bg: rgba(255, 255, 255, 0.2);
-  --button-hover: rgba(255, 255, 255, 0.3);
-  --overlay-bg: rgba(255, 255, 255, 0.05);
-}
-
-/* Minimal Dark Matte Theme */
-[data-theme="minimal"] {
-  --card-bg: rgba(17, 24, 39, 0.8);
-  --card-border: rgba(75, 85, 99, 0.3);
-  --card-hover-border: rgba(75, 85, 99, 0.5);
-  --text-primary: rgb(243, 244, 246);
-  --text-secondary: rgb(156, 163, 175);
-  --text-accent: rgb(209, 213, 219);
-  --button-bg: rgb(55, 65, 81);
-  --button-hover: rgb(75, 85, 99);
-  --overlay-bg: rgba(17, 24, 39, 0.9);
-}
-
-/* Soft Pastel Theme */
-[data-theme="pastel"] {
-  --card-bg: rgba(255, 255, 255, 0.15);
-  --card-border: rgba(251, 207, 232, 0.3);
-  --card-hover-border: rgba(251, 207, 232, 0.5);
+/* Nebula Theme */
+[data-theme="nebula"] {
+  --card-bg: rgba(139, 69, 19, 0.3);
+  --card-border: rgba(236, 72, 153, 0.4);
+  --card-hover-border: rgba(236, 72, 153, 0.6);
   --text-primary: rgb(255, 255, 255);
   --text-secondary: rgb(251, 207, 232);
-  --text-accent: rgb(196, 181, 253);
-  --button-bg: linear-gradient(to right, rgb(251, 207, 232), rgb(196, 181, 253));
-  --button-hover: linear-gradient(to right, rgb(244, 114, 182), rgb(167, 139, 250));
-  --overlay-bg: rgba(251, 207, 232, 0.1);
+  --text-accent: rgb(244, 114, 182);
+  --button-bg: linear-gradient(to right, rgb(236, 72, 153), rgb(147, 51, 234));
+  --button-hover: linear-gradient(to right, rgb(219, 39, 119), rgb(126, 34, 206));
+  --overlay-bg: rgba(139, 69, 19, 0.4);
+  --galaxy-bg: linear-gradient(135deg, #ec4899 0%, #8b5cf6 30%, #3b82f6 60%, #06b6d4 100%);
 }
 
-/* Cyberpunk Theme */
-[data-theme="cyberpunk"] {
-  --card-bg: rgba(0, 0, 0, 0.8);
-  --card-border: rgba(34, 197, 94, 0.5);
-  --card-hover-border: rgba(34, 197, 94, 0.8);
-  --text-primary: rgb(34, 197, 94);
-  --text-secondary: rgb(250, 204, 21);
-  --text-accent: rgb(239, 68, 68);
-  --button-bg: linear-gradient(to right, rgb(34, 197, 94), rgb(250, 204, 21));
-  --button-hover: linear-gradient(to right, rgb(22, 163, 74), rgb(245, 158, 11));
-  --overlay-bg: rgba(0, 0, 0, 0.9);
+/* Aurora Theme */
+[data-theme="aurora"] {
+  --card-bg: rgba(6, 78, 59, 0.4);
+  --card-border: rgba(34, 197, 94, 0.3);
+  --card-hover-border: rgba(34, 197, 94, 0.5);
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: rgb(134, 239, 172);
+  --text-accent: rgb(74, 222, 128);
+  --button-bg: linear-gradient(to right, rgb(34, 197, 94), rgb(59, 130, 246));
+  --button-hover: linear-gradient(to right, rgb(22, 163, 74), rgb(37, 99, 235));
+  --overlay-bg: rgba(6, 78, 59, 0.6);
+  --galaxy-bg: linear-gradient(135deg, #065f46 0%, #22c55e 30%, #3b82f6 70%, #06b6d4 100%);
+}
+
+/* Sunset Cosmos Theme */
+[data-theme="sunsetCosmos"] {
+  --card-bg: rgba(154, 52, 18, 0.4);
+  --card-border: rgba(249, 115, 22, 0.4);
+  --card-hover-border: rgba(249, 115, 22, 0.6);
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: rgb(254, 215, 170);
+  --text-accent: rgb(251, 146, 60);
+  --button-bg: linear-gradient(to right, rgb(249, 115, 22), rgb(239, 68, 68));
+  --button-hover: linear-gradient(to right, rgb(234, 88, 12), rgb(220, 38, 38));
+  --overlay-bg: rgba(154, 52, 18, 0.5);
+  --galaxy-bg: linear-gradient(135deg, #f97316 0%, #ef4444 30%, #dc2626 60%, #7c3aed 100%);
+}
+
+/* Dreamy Pastel Theme */
+[data-theme="dreamyPastel"] {
+  --card-bg: rgba(255, 255, 255, 0.15);
+  --card-border: rgba(196, 181, 253, 0.3);
+  --card-hover-border: rgba(196, 181, 253, 0.5);
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: rgb(221, 214, 254);
+  --text-accent: rgb(196, 181, 253);
+  --button-bg: linear-gradient(to right, rgb(196, 181, 253), rgb(251, 207, 232));
+  --button-hover: linear-gradient(to right, rgb(167, 139, 250), rgb(244, 114, 182));
+  --overlay-bg: rgba(255, 255, 255, 0.1);
+  --galaxy-bg: linear-gradient(135deg, #fbb6ce 0%, #c4b5fd 30%, #a5b4fc 60%, #bfdbfe 100%);
+}
+
+/* Galaxy Background Classes */
+.galaxy-background {
+  background: var(--galaxy-bg);
+  position: relative;
+}
+
+.galaxy-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--galaxy-bg);
+  filter: blur(0px);
+  z-index: -1;
+}
+
+/* Dreamy Pastel gets a blur effect */
+[data-theme="dreamyPastel"] .galaxy-background::before {
+  filter: blur(2px);
+  opacity: 0.9;
 }
 
 /* Apply theme variables to components */
@@ -385,28 +415,37 @@ body {
   background: var(--overlay-bg);
 }
 
-/* Special effects for neon theme */
-[data-theme="neon"] .themed-card {
-  box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+/* Special effects for nebula theme */
+[data-theme="nebula"] .themed-card {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.3);
 }
 
-[data-theme="neon"] .themed-card:hover {
-  box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
+[data-theme="nebula"] .themed-card:hover {
+  box-shadow: 0 0 30px rgba(236, 72, 153, 0.5);
 }
 
-/* Glass morphism effects */
-[data-theme="glass"] .themed-card {
-  backdrop-filter: blur(20px);
-  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
-}
-
-/* Cyberpunk glow effects */
-[data-theme="cyberpunk"] .themed-card {
+/* Aurora glow effects */
+[data-theme="aurora"] .themed-card {
   box-shadow: 0 0 15px rgba(34, 197, 94, 0.2);
 }
 
-[data-theme="cyberpunk"] .themed-card:hover {
+[data-theme="aurora"] .themed-card:hover {
   box-shadow: 0 0 25px rgba(34, 197, 94, 0.4);
+}
+
+/* Sunset Cosmos warm glow */
+[data-theme="sunsetCosmos"] .themed-card {
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+}
+
+[data-theme="sunsetCosmos"] .themed-card:hover {
+  box-shadow: 0 0 25px rgba(249, 115, 22, 0.4);
+}
+
+/* Dreamy Pastel soft glow */
+[data-theme="dreamyPastel"] .themed-card {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(196, 181, 253, 0.2);
 }
 
 /* Form focus states */
